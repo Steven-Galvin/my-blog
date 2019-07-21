@@ -56,3 +56,7 @@ gem 'sassc-rails', '>= 2.1.0'
 
 # Add jQuery
 gem 'jquery-rails'
+
+# Add Pagination
+gem 'will_paginate', '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
