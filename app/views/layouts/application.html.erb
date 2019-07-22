@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Arianna's Blog</title>
+    <title>Steven's Blog</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,7 +11,9 @@
   <body>
     <%= render 'layouts/navigation' %>
     <%= render 'shared/messages' %>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
   <%= debug(params) if Rails.env.development? %>
 </html>

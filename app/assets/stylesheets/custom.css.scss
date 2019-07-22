@@ -1,9 +1,32 @@
-$navbar-default-bg: black;
+$navbar-default-bg: #323232;
+$navbar-default-color: #949494;
+$navbar-default-link-color: #949494;
+$navbar-default-link-hover-color: #c5c5c5;
+$navbar-border-radius: 0;
+$navbar-user: #b20000;
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.nav-user a {
+  color: $navbar-user;
+  &:hover {
+    color: lighten($navbar-user, 40%);
+  }
+}
+
+.nav-info {
+  padding: 15px;
+  line-height: 20px;
+  color: $navbar-default-color;
+}
 
 #logo {
   float: left;
