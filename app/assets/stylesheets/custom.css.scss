@@ -10,9 +10,44 @@ $navbar-user: #b20000;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   width: 80%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1 0 auto;
+}
+
+footer {
+  background-color: $navbar-default-bg;
+  color: $navbar-default-link-color;
+  flex-shrink: 0;
+  margin-top: auto;
+  display: flex;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $navbar-default-link-color;
+    &:hover {
+      color: $navbar-default-link-hover-color;
+    }
+  }
 }
 
 .nav-user a {
